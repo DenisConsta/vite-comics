@@ -9,6 +9,7 @@ import AppFooter from './components/AppFooter.vue';
 import links from './data/menu'
 import shop from './data/shop';
 import dcComics from './data/dc-comics'
+import {navs, socials} from './data/footerLinks'
 
 export default {
   name: 'App',
@@ -22,7 +23,9 @@ export default {
     return{
       links,
       shop,
-      dcComics
+      dcComics,
+      navs,
+      socials
     }
   }
 }
@@ -32,7 +35,7 @@ export default {
     <AppHeader :menu="links" />
     <AppMain :thumbs="dcComics"/>
     <AppShop :shop="shop" />
-    <AppFooter/>
+    <AppFooter :links="{navs, socials}"/>
 </template>
 
 <style lang="scss">

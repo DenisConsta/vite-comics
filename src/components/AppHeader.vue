@@ -65,6 +65,13 @@ nav{
       }
     }
   }
+
+  @media screen and (max-width: 992px) {
+    .links{
+      display: none;
+    }
+  }
+
 }
 
 </style>

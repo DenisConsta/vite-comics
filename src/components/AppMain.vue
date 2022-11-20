@@ -43,10 +43,10 @@ export default {
 @use "../styles/partials/mixin" as *;
 
 #hero {
-  max-height: 400px;
+  height: 400px;
 
   img {
-    max-height: 400px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
     object-position: top;
@@ -72,7 +72,7 @@ export default {
       background-color: $color-primary;
       font-size: 2rem;
       padding: 0 2rem;
-      top: -18%;
+      bottom: 110%;
       left: 0;
     }
 

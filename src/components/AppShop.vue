@@ -31,7 +31,7 @@ export default {
       >
         <li v-for="(link, index) in shop" :key="index" class="">
           <img :src="getPathImage(link.img)" alt="link.text" />
-          <a>{{ link.text }}</a>
+          <a class="d-none d-lg-block">{{ link.text }}</a>
         </li>
       </ul>
     </div>
